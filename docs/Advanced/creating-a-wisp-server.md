@@ -106,14 +106,14 @@ cargo b -r
 cd ../target/release/
 ```
 
-#### Mark `epoxy-tls` as an executable:
+#### Mark `epoxy-server` as an executable:
 ```shell
-chmod +x ./epoxy-tls
+chmod +x ./epoxy-server
 ```
 
-#### Generate the `epoxy-tls` config file:
+#### Generate the `epoxy-server` config file:
 ```shell
-./epoxy-tls --default-config > config.toml
+./epoxy-server --default-config > config.toml
 ```
 
 #### Edit the `config.toml` to your liking:
@@ -121,9 +121,9 @@ chmod +x ./epoxy-tls
 nano ./config.toml
 ```
 
-#### Run `epoxy-tls` with the config file as an argument:
+#### Run `epoxy-server` with the config file as an argument:
 ```shell
-./epoxy-tls ./config.toml
+./epoxy-server ./config.toml
 ```
 
 **Congratulations! 🎉** Your wisp server should be running. Now, go distribute your wisp server ip for people (or yourself) to use.
