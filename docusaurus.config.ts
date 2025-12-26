@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Resent Client',
   tagline: 'The best EaglercraftX 1.8 PvP Client',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -68,9 +68,9 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docsSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Docs',
         },
         {
           href: 'https://github.com/The-Resent-Team',
@@ -86,7 +86,7 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Docs',
               to: '/docs/intro',
             },
           ],
