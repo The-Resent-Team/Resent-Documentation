@@ -1,0 +1,52 @@
+---
+sidebar_position: 1
+---
+
+# Theme Mod
+
+:::note
+
+Central mod for configuring essential components of the Resent Gui
+
+:::
+
+:::warning
+
+It is heavily recommended you read through this document before experimenting!
+
+:::
+
+---
+
+* <SettingSection>Basic Settings</SettingSection>
+  * <Setting>Enable Animations</Setting>: Master toggle for enabling and disabling animations on all Resent components.
+  * <Setting>Primary Color</Setting>: Configures the primary color used by Resent components.
+  * <Setting>Disabled By Prelude Button Color</Setting>: Unused
+  * <Setting>Animation Speed Multiplier</Setting>: Global scalar applied to all animations, higher values make animations finish faster.
+  * <Setting>UI Focused Color</Setting>: Color used for focused Resent components.
+  * <Setting>UI Unfocused Color</Setting>: Color used for unfocused Resent components.
+  * <Setting>Tooltip Background Alpha</Setting>: Scalar for the background opacity of tooltip components.
+  * <Setting>Setting Content Offset</Setting>: Distance between the setting *label* and the setting *content*. [^1]
+* <SettingSection>Smoothing Settings</SettingSection>
+  * <Setting>Enable Smooth Scrolling</Setting>: Master toggle for smooth scroll animations on all Resent components.
+  * <Setting>Enable Smoother Rounded Corners</Setting>: Master toggle for using smoother rounded corners for components.
+  * <SettingSection>Rounded Corner Settings</SettingSection>
+    * <Setting>Smooth Corner Rounding Type</Setting>: `Shader`: Uses a shader for smoothing; `Extra Tessellation` uses techniques to appeal to human eyesight.
+    * <SettingSection>Extra Tessellation Settings</SettingSection>
+      * <Setting>Extra Tessellation Slices</Setting>: Configure the amount of *slices* used by Extra Tessellation technique.
+      * <Setting>Circle Tessellation Slice Scalar</Setting>: Scalar used on the amount of *slices* when rendering near-circles or circles.
+* <SettingSection>Toggle Setting Settings</SettingSection>
+  * <Setting>Enabled Button Color</Setting>: Color of the background of a toggle setting when it is <strong><span style={{color: "darkgreen"}}>Enabled</span></strong>.
+  * <Setting>Disabled Button Color</Setting>: Color of the background of a toggle setting when it is <strong><span style={{color: "darkred"}}>Disabled</span></strong>.
+  * <Setting>Handle Color</Setting>: Color of the *bulge/handle* of a toggle setting.
+  * <Setting>Toggle Knob Bulge</Setting>: Radius *increase* of the *bulge/handle* of a toggle setting.
+* <SettingSection>Text Field Settings</SettingSection>
+  * <Setting>Text Field Cursor Color</Setting>: Color of the cursor being rendered in Resent text fields.
+  * <Setting>Text Field Text Color</Setting>: Color of the text being rendered in Resent text fields.
+  * <Setting>Enable Text Field Focus Animation</Setting>: Toggle for a focus animation on Resent text fields.
+  * <Setting>Enable Text Field Smooth Cursor</Setting>: Toggle for smooth cursor animation in Resent text fields.
+  * <SettingSection>Smooth Cursor Settings</SettingSection>
+    * <Setting>Text Field Smooth Cursor Speed Multiplier</Setting>: Global multiplicative scalar used for speed of the smooth cursor animation.
+
+
+[^1]: ![Image labelling setting *label* and *content*](/setting_label_and_content.png)

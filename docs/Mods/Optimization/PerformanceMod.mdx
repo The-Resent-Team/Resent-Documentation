@@ -1,0 +1,20 @@
+---
+sidebar_position: 1
+---
+
+# Performance Mod
+
+---
+
+## General Performance Settings
+* <Setting>Remove block effects</Setting>: Cancels rendering of FXEntity particles. (Block particles)
+* <Setting>Void Fog Iterations</Setting>: Configures the amount of particles spawned by the void.
+* <Setting>No light updates</Setting>: Suppresses *non-required*[^1] light updates.
+* <Setting>Remove All Particles</Setting>: Suppresses all *non-block* particles.
+* <Setting>Remove All Foliage</Setting>: Prevents rendering of foliage blocks if they are not crop blocks.
+* <Setting>Make Foliage Opaque</Setting>: Forces all foliage to render without translucency.
+* <Setting>Remove Rain Particles</Setting>: Cancels rendering of rain *and* snow particles.
+* <Setting>Set minimal settings</Setting>: Sets *believed* settings for optimal performance[^2]
+
+[^1]: This uses a heuristic algorithm to determine non-required light updates. This is not guaranteed to be perfect.
+[^2]: This currently diables V-Sync which is a mistake. Refer to [Performance Optimization](../../Configuration/optimization.mdx) for best practices
